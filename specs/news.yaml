@@ -14,10 +14,11 @@ info:
   description: An API to provide news
 tags:
   - name: news
+    description: All related to news
 paths:
   /news:
     get:
-      description: gets latest news
+      description: Get latest news
       operationId: getNews
       tags:
         - news
@@ -36,7 +37,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       parameters: []
-      summary: ''
+      summary: 'Get the latest information from the news service'
 components:
   schemas:
     ArticleList:
